@@ -1,0 +1,42 @@
+.partner-img {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.top-trends-list {
+    list-style: disc;
+    color: #0d6efd;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    column-count: 2;
+    column-gap: 2rem;
+    max-width: 700px;
+}
+
+.top-trends-list li {
+    color: #0d6efd;
+    margin-bottom: 0.5em;
+}
+
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+.doctor-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    background: #e0e0e0;
+}

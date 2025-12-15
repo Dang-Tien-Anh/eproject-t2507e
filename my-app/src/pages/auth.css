@@ -1,0 +1,46 @@
+.auth-section {
+    min-height: 70vh;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.auth-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    padding: 2.5rem 2rem;
+    background: #fff;
+}
+
+.auth-title {
+    font-weight: 700;
+    color: #2dbad4;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.auth-link {
+    color: #2dbad4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+    color: #168ca2;
+}
+
+.btn-custom-blue {
+    background-color: #2dbad4 !important;
+    border-color: #2dbad4 !important;
+    color: #fff !important;
+}
+
+.btn-custom-blue:hover,
+.btn-custom-blue:focus {
+    background-color: #168ca2 !important;
+    border-color: #168ca2 !important;
+    color: #fff !important;
+}
