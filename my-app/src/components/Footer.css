@@ -1,10 +1,10 @@
 .footer-section {
     background: #222;
-    color: #fff;
+    color: #000000;
 }
 
 .footer-section h6 {
-    color: #fff;
+    color: #000000;
     letter-spacing: 1px;
     font-size: 1.1rem;
 }
@@ -19,7 +19,7 @@
 
 .footer-section a,
 .footer-section li {
-    color: #bbb;
+    color: #000000;
 }
 
 .footer-section a:hover {
@@ -27,7 +27,7 @@
 }
 
 .footer-section .text-muted {
-    color: #aaa !important;
+    color: #000000 !important;
 }
 
 .footer-section .small {

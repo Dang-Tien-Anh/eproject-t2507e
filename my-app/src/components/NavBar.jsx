@@ -18,7 +18,7 @@ const NavBar = () => {
                     <Navbar.Toggle aria-controls="soulmedic-navbar" />
                     <Navbar.Collapse id="soulmedic-navbar" className="justify-content-center">
                         <Nav className="mx-auto align-items-center nav-center">
-                            <Nav.Link href="#home" className="nav-link-custom active">HOME</Nav.Link>
+                            <Nav.Link href="#home" className="nav-link-custom">HOME</Nav.Link>
                             <Nav.Link href="#doctors" className="nav-link-custom">DOCTORS</Nav.Link>
                             <Nav.Link href="#appointments" className="nav-link-custom">APPOINTMENTS</Nav.Link>
                             <Nav.Link href="#blog" className="nav-link-custom">BLOG</Nav.Link>
