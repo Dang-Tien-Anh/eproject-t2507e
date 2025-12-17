@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
-import '../assets/css/StupidFuckingLists.css';
+import '../assets/css/Lists.css';
 
 /** Inline partner image paths (edit here) */
 const partners = [

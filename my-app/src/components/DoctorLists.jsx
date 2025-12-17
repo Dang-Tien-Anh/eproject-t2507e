@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Carousel, Row, Col, Card } from "react-bootstrap";
-import '../assets/css/StupidFuckingLists.css';
+import '../assets/css/Lists.css';
 
 /** Inline doctors data (edit here) */
 const doctors = [

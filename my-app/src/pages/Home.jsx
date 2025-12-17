@@ -14,21 +14,13 @@ import PartnersList from '../components/PartnersList';
 import { Container, Row, Col, Button, Card, Form, Accordion, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import slide1 from '../images/1-slide.webp';
-import slide2 from '../images/2-slide.jpg';
-import slide3 from '../images/3-slide.webp';
 import icon1 from '../images/icon-1.png';
 import icon2 from '../images/icon-2.png';
 import icon3 from '../images/icon-3.png';
-import doctorImg from '../images/DOCTOR.png';
-import post1 from '../images/post1.png';
-import post2 from '../images/post2.png';
-import post3 from '../images/post3.png';
 import icon4 from '../images/icon-4.png';
 import icon5 from '../images/icon-5.png';
 import icon6 from '../images/icon-6.png';
 
-import trendsImage from "../images/DOCTOR.png";
 
 const Home = () => {
     return (
@@ -39,13 +31,13 @@ const Home = () => {
             {/* Carousel Section */}
             <Carousel className="">
                 <Carousel.Item>
-                    <img className="d-block w-100 carousel-img" src={slide1} alt="First slide" />
+                    <img className="d-block w-100 carousel-img" src="https://www.mua.edu/uploads/sites/10/2023/02/istock-482499394.webp" alt="First slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100 carousel-img" src={slide2} alt="Second slide" />
+                    <img className="d-block w-100 carousel-img" src="https://max-website20-images.s3.ap-south-1.amazonaws.com/Types_of_Doctors_1c5efbe677.jpg" alt="Second slide" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100 carousel-img" src={slide3} alt="Third slide" />
+                    <img className="d-block w-100 carousel-img" src="https://www.onlinemeded.com/hubfs/Facts%20About%20Doctors.png" alt="Third slide" />
                 </Carousel.Item>
             </Carousel>
 
@@ -141,7 +133,7 @@ const Home = () => {
                 <Container>
                     <Row className="align-items-center">
                         <Col md={4} className="text-center mb-4 mb-md-0">
-                            <img src={doctorImg} alt="Dr. John Smith" className="doctor-img" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDqJZtBHSDkmMSZ6cPC2xf7ZsCe1CYIJopw&s" alt="Dr. John Smith" className="doctor-img" />
                             <h5 className="mt-3">Dr. John Smith (MD)</h5>
                             <p className="text-muted">Medicine, Surgery</p>
                         </Col>
@@ -169,7 +161,7 @@ const Home = () => {
                     <Row>
                         <Col md={4} className="mb-4">
                             <Card>
-                                <img src={post1} alt="Proin fermentum ut massa at" style={{ height: '200px', objectFit: 'cover', width: '100%' }} />
+                                <img src="https://image.vietnamnews.vn/uploadvnnews/Article/2018/2/26/0116342855PM.jpg" alt="Proin fermentum ut massa at" style={{ height: '200px', objectFit: 'cover', width: '100%' }} />
                                 <Card.Body>
                                     <Card.Title>Proin fermentum ut massa at</Card.Title>
                                     <p className="text-muted small">Admin • 2 months ago</p>
@@ -180,7 +172,7 @@ const Home = () => {
                         </Col>
                         <Col md={4} className="mb-4">
                             <Card>
-                                <img src={post2} alt="Curabitur lobortis risus at" style={{ height: '200px', objectFit: 'cover', width: '100%' }} />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTc-A92QJf_l1dtO1yE5KTDTz7TX41BZDMw&s" alt="Curabitur lobortis risus at" style={{ height: '200px', objectFit: 'cover', width: '100%' }} />
                                 <Card.Body>
                                     <Card.Title>Curabitur lobortis risus at</Card.Title>
                                     <p className="text-muted small">Admin • 2 months ago</p>
@@ -191,7 +183,7 @@ const Home = () => {
                         </Col>
                         <Col md={4} className="mb-4">
                             <Card>
-                                <img src={post3} alt="Heart Rate Predicts risk" style={{ height: '200px', objectFit: 'cover', width: '100%' }} />
+                                <img src="https://media.sciencephoto.com/c0/37/67/99/c0376799-800px-wm.jpg" alt="Heart Rate Predicts risk" style={{ height: '200px', objectFit: 'cover', width: '100%' }} />
                                 <Card.Body>
                                     <Card.Title>Heart Rate Predicts risk</Card.Title>
                                     <p className="text-muted small">Admin • 2 months ago</p>
@@ -232,7 +224,7 @@ const Home = () => {
                         <Col md={4} sm={12} className="d-flex justify-content-center">
                             <div className="trend-image-wrapper">
                                 <img
-                                    src={trendsImage}
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDqJZtBHSDkmMSZ6cPC2xf7ZsCe1CYIJopw&s"
                                     alt="Health trends illustration"
                                     className="trend-image"
                                     loading="lazy"
