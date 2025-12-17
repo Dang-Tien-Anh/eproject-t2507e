@@ -1,8 +1,8 @@
 import React from 'react';
-import './Footer.css';
+import '../assets/css/Footer.css';
 
 const Footer = () => (
-    <footer className="footer-section bg-light text-dark pt-5 pb-3 mt-5">
+    <footer className="footer-section bg-light text-dark pt-5 pb-3">
         <div className="container">
             <div className="row">
                 <div className="col-md-3 mb-4">

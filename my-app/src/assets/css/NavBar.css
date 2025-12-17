@@ -1,3 +1,51 @@
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        padding-top: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.3rem;
+    }
+
+    .navbar-logo-sub {
+        font-size: 0.9rem;
+        margin-top: 4px;
+        margin-left: 6px;
+    }
+
+    .nav-center .nav-link-custom,
+    .nav-link-special {
+        font-size: 1rem;
+        padding: 0.6rem 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-logo {
+        font-size: 1.1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-logo-sub {
+        font-size: 0.85rem;
+        margin-top: 2px;
+        margin-left: 0;
+    }
+
+    .nav-center .nav-link-custom,
+    .nav-link-special {
+        font-size: 0.98rem;
+        padding: 0.5rem 0.7rem;
+        margin: 0 0.05rem;
+    }
+
+    .navbar-underline {
+        height: 3px;
+    }
+}
+
 .nav-link-special {
     border: 2px solid #2dbad4 !important;
     background: #e6f7fb !important;

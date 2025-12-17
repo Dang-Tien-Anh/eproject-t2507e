@@ -5,6 +5,7 @@
     margin-bottom: 10px;
 }
 
+/* ensure list keeps two columns on larger screens */
 .top-trends-list {
     list-style: disc;
     color: #0d6efd;
@@ -13,12 +14,44 @@
     column-count: 2;
     column-gap: 2rem;
     max-width: 700px;
+    margin: 0;
+    /* reset default margins */
 }
 
-.top-trends-list li {
-    color: #0d6efd;
-    margin-bottom: 0.5em;
+/* wrapper to center and constrain the image */
+.trend-image-wrapper {
+    width: 100%;
+    max-width: 320px;
+    /* adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
 }
+
+/* responsive image */
+.trend-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* smaller screens: stack and make image full width */
+@media (max-width: 767.98px) {
+    .top-trends-list {
+        column-count: 1;
+        max-width: 100%;
+    }
+
+    .trend-image-wrapper {
+        max-width: 420px;
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+}
+
 
 .carousel-img {
     height: 500px;
@@ -31,12 +64,36 @@
     margin-bottom: 15px;
 }
 
+/* show full image, responsive */
 .doctor-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* remove fixed height */
+    max-width: 250px;
+    /* optional: limit width for layout */
+    margin: 0 auto;
+    object-fit: contain;
+    /* ensures whole image is visible */
+    border-radius: 8px;
+    /* optional */
+    background: #f0f0f0;
+    /* optional placeholder color */
+}
+
+/* If you want a fixed card height but keep the whole image visible */
+.doctor-img-wrapper {
     width: 250px;
     height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     margin: 0 auto;
-    display: block;
-    background: #e0e0e0;
+}
+
+.doctor-img-wrapper img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
 }

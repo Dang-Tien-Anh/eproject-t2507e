@@ -9,6 +9,8 @@ import Footer from '../components/Footer';
 
 import React from 'react';
 import NavBar from '../components/NavBar';
+import DoctorLists from '../components/DoctorLists';
+import PartnersList from '../components/PartnersList';
 import { Container, Row, Col, Button, Card, Form, Accordion, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,6 +28,8 @@ import icon4 from '../images/icon-4.png';
 import icon5 from '../images/icon-5.png';
 import icon6 from '../images/icon-6.png';
 
+import trendsImage from "../images/DOCTOR.png";
+
 const Home = () => {
     return (
         <>
@@ -33,7 +37,7 @@ const Home = () => {
             <NavBar />
 
             {/* Carousel Section */}
-            <Carousel className="mb-4">
+            <Carousel className="">
                 <Carousel.Item>
                     <img className="d-block w-100 carousel-img" src={slide1} alt="First slide" />
                 </Carousel.Item>
@@ -132,6 +136,7 @@ const Home = () => {
             </section>
 
             {/* Doctor Profile Section */}
+
             <section className="py-5 bg-white">
                 <Container>
                     <Row className="align-items-center">
@@ -155,8 +160,10 @@ const Home = () => {
                 </Container>
             </section>
 
+            <DoctorLists />
+
             {/* Blog Section */}
-            <section className="py-5 bg-light">
+            <section className="py-5 bg-white">
                 <Container>
                     <h3 className="mb-5">From the Blog</h3>
                     <Row>
@@ -198,28 +205,47 @@ const Home = () => {
             </section>
 
             {/* Top Trends - Health Talks Section */}
-            <section className="py-5 bg-white">
+            <section className="py-5 bg-light">
                 <Container>
                     <h4 className="mb-4">Top Trends - Health Talks</h4>
-                    <ul className="top-trends-list">
-                        <li>Breast Cancer Types</li>
-                        <li>Medical Eligibility</li>
-                        <li>Medical Facility</li>
-                        <li>Yellow Fever</li>
-                        <li>Gonorrhea</li>
-                        <li>No Vaccine</li>
-                        <li>Gluten-Free Diet</li>
-                        <li>HIV / AIDS</li>
-                        <li>Asthma in Cold Weather</li>
-                        <li>Insurance Deductions</li>
-                        <li>Pumpkin Health Benefits</li>
-                        <li>Diet-related Syndromes</li>
-                    </ul>
+
+                    <Row className="align-items-start">
+                        {/* Left: list */}
+                        <Col md={8} sm={12}>
+                            <ul className="top-trends-list">
+                                <li>Breast Cancer Types</li>
+                                <li>Medical Eligibility</li>
+                                <li>Medical Facility</li>
+                                <li>Yellow Fever</li>
+                                <li>Gonorrhea</li>
+                                <li>No Vaccine</li>
+                                <li>Gluten-Free Diet</li>
+                                <li>HIV / AIDS</li>
+                                <li>Asthma in Cold Weather</li>
+                                <li>Insurance Deductions</li>
+                                <li>Pumpkin Health Benefits</li>
+                                <li>Diet-related Syndromes</li>
+                            </ul>
+                        </Col>
+
+                        {/* Right: single image */}
+                        <Col md={4} sm={12} className="d-flex justify-content-center">
+                            <div className="trend-image-wrapper">
+                                <img
+                                    src={trendsImage}
+                                    alt="Health trends illustration"
+                                    className="trend-image"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </section>
+            );
 
             {/* Partners Section */}
-            <section className="py-5 bg-light">
+            {/* <section className="py-5 bg-light">
                 <Container>
                     <h3 className="text-center mb-5">Our Partners</h3>
                     <Row className="text-center">
@@ -237,7 +263,9 @@ const Home = () => {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
+            <PartnersList />
+
 
             <Footer />
         </>

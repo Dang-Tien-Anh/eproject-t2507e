@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import './NavBar.css';
+import '../assets/css/NavBar.css';
 
 
 const NavBar = () => {

@@ -1,0 +1,73 @@
+/* tighten spacing so footer sits close */
+.partners-section,
+.doctors-section {
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+}
+
+/* row inside carousel */
+.partner-wrapper {
+    padding: 0.5rem;
+}
+
+/* partner image responsive */
+.partner-img {
+    max-width: 180px;
+    max-height: 100px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+}
+
+/* doctor card uses full column width (no fixed px) */
+.doctor-card {
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* doctor image responsive */
+.doctor-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* reduce gap before footer */
+.footer-section {
+    margin-top: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* responsive tweaks */
+@media (max-width: 991.98px) {
+    .partner-img {
+        max-width: 220px;
+        max-height: 120px;
+    }
+
+    .doctor-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .partner-img {
+        max-width: 260px;
+        max-height: 140px;
+    }
+
+    .doctor-img {
+        height: 220px;
+    }
+
+    .carousel .carousel-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
